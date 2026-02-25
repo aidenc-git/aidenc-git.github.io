@@ -60,16 +60,15 @@
     }
 
     .nav-logo {
-      display: flex;
-      align-items: center;
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1.6rem;
+      letter-spacing: -0.02em;
+      color: var(--text);
       text-decoration: none;
     }
 
-    .nav-logo img {
-      height: 44px;
-      width: auto;
-      object-fit: contain;
-    }
+    .nav-logo span { color: var(--accent); }
 
     nav a.portal-btn {
       font-family: 'DM Mono', monospace;
@@ -573,15 +572,12 @@
 
   <!-- NAV -->
   <nav>
-    <a href="#" class="nav-logo">
-      <img src="A2-Logo.PNG" alt="A² Logo" />
-    </a>
+    <a href="#" class="nav-logo">A<span>²</span></a>
     <a href="https://studentportalfrontend-production.up.railway.app/" class="portal-btn" target="_blank">Student Portal →</a>
   </nav>
 
   <!-- HERO -->
   <section id="hero">
-    <img src="A2-Logo.PNG" alt="A² Logo" style="height:110px;width:auto;object-fit:contain;margin-bottom:24px;animation:fadeUp 0.7s ease both;" />
     <span class="tag">www.a-squaredlearning.com</span>
     <h1>Engineering Education,<br /><em>Reimagined by AI</em></h1>
     <p class="hero-sub">A² is an AI-powered video learning platform built specifically for computer engineering students — delivering precision-curated, semantically searchable content on Verilog, cache design, pipelining, branch prediction, and beyond.</p>
@@ -711,7 +707,7 @@
           <div class="avatar-ring">AC</div>
           <div class="about-name">Aiden Christian</div>
           <div class="about-role">Founder & Developer · A²</div>
-          <p style="font-size:0.88rem;color:var(--muted);">Freedom High School, South Riding, VA<br/>Class of 2026 · GPA 4.40</p>
+          <p style="font-size:0.88rem;color:var(--muted);">Freedom High School, South Riding, VA<br/>Class of 2026</p>
           <div class="skills-tags">
             <span class="skill-tag">Python</span>
             <span class="skill-tag">React</span>
@@ -783,7 +779,6 @@
 
   <!-- FOOTER -->
   <footer>
-    <img src="A2-Logo.PNG" alt="A² Logo" style="height:48px;width:auto;object-fit:contain;margin-bottom:14px;opacity:0.85;" /><br/>
     <p>© 2025 A² (Asquared) · <a href="www.a-squaredlearning.com">www.a-squaredlearning.com</a> · Built by Aiden Christian</p>
     <p style="margin-top:8px;">Computer Engineering Education · AI-Powered · Semantic Search</p>
   </footer>
