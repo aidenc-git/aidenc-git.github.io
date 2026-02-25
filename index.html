@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>A² | AI-Powered Engineering Education</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=JetBrains+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -17,7 +18,7 @@
       --accent2: #00e5c0;
       --gold: #f5c542;
       --text: #e8edf8;
-      --muted: #7a8aab;
+      --muted: #96a6c2;
       --border: rgba(61,155,255,0.15);
     }
 
@@ -26,9 +27,9 @@
     body {
       background: var(--bg);
       color: var(--text);
-      font-family: 'DM Sans', sans-serif;
-      font-size: 16px;
-      line-height: 1.6;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 16.5px;
+      line-height: 1.7;
       overflow-x: hidden;
     }
 
@@ -72,9 +73,9 @@
     }
 
     nav a.portal-btn {
-      font-family: 'DM Mono', monospace;
-      font-size: 0.8rem;
-      letter-spacing: 0.08em;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.82rem;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
       text-decoration: none;
       color: var(--bg);
@@ -114,9 +115,9 @@
     }
 
     .tag {
-      font-family: 'DM Mono', monospace;
-      font-size: 0.72rem;
-      letter-spacing: 0.14em;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       color: var(--accent2);
       border: 1px solid rgba(0,229,192,0.3);
@@ -128,11 +129,11 @@
     }
 
     h1 {
-      font-family: 'Syne', sans-serif;
-      font-size: clamp(2.8rem, 7vw, 6rem);
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(2.8rem, 7vw, 5.8rem);
       font-weight: 800;
-      line-height: 1.05;
-      letter-spacing: -0.03em;
+      line-height: 1.08;
+      letter-spacing: -0.02em;
       margin-bottom: 24px;
       animation: fadeUp 0.9s ease 0.1s both;
     }
@@ -143,10 +144,12 @@
     }
 
     .hero-sub {
-      font-size: clamp(1rem, 2.2vw, 1.2rem);
+      font-size: clamp(1.05rem, 2.2vw, 1.25rem);
       color: var(--muted);
-      max-width: 620px;
+      max-width: 640px;
       margin-bottom: 48px;
+      font-weight: 400;
+      line-height: 1.75;
       animation: fadeUp 1s ease 0.2s both;
     }
 
@@ -165,23 +168,7 @@
       background: var(--accent);
       color: #fff;
       text-decoration: none;
-      font-family: 'Syne', sans-serif;
-      font-weight: 700;
-      font-size: 0.95rem;
-      padding: 14px 30px;
-      border-radius: 6px;
-      transition: background 0.2s, transform 0.2s;
-    }
-
-    .btn-primary:hover { background: #5aadff; transform: translateY(-2px); }
-
-    .btn-ghost {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      color: var(--text);
-      text-decoration: none;
-      font-family: 'Syne', sans-serif;
+      font-family: 'Outfit', sans-serif;
       font-weight: 600;
       font-size: 0.95rem;
       padding: 14px 30px;
@@ -204,14 +191,14 @@
 
     .stat { text-align: center; }
     .stat-num {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Outfit', sans-serif;
       font-size: 2.2rem;
       font-weight: 800;
       color: var(--accent);
       letter-spacing: -0.03em;
     }
     .stat-label {
-      font-family: 'DM Mono', monospace;
+      font-family: 'JetBrains Mono', monospace;
       font-size: 0.7rem;
       letter-spacing: 0.1em;
       text-transform: uppercase;
@@ -229,7 +216,7 @@
     }
 
     .section-label {
-      font-family: 'DM Mono', monospace;
+      font-family: 'JetBrains Mono', monospace;
       font-size: 0.7rem;
       letter-spacing: 0.15em;
       text-transform: uppercase;
@@ -238,11 +225,11 @@
     }
 
     h2 {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Outfit', sans-serif;
       font-size: clamp(2rem, 4vw, 2.8rem);
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      line-height: 1.1;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      line-height: 1.15;
       margin-bottom: 20px;
     }
 
@@ -280,14 +267,14 @@
     }
 
     .prob-title {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Outfit', sans-serif;
       font-weight: 700;
       font-size: 1rem;
       margin-bottom: 8px;
       color: var(--gold);
     }
 
-    .prob-desc { font-size: 0.9rem; color: var(--muted); }
+    .prob-desc { font-size: 0.95rem; color: var(--muted); line-height: 1.7; }
 
     /* ── SOLUTION ── */
     .solution-grid {
@@ -316,7 +303,8 @@
       display: flex;
       align-items: flex-start;
       gap: 14px;
-      font-size: 0.95rem;
+      font-size: 1rem;
+      line-height: 1.65;
     }
 
     .feature-list li .icon {
@@ -337,7 +325,7 @@
       border: 1px solid var(--border);
       border-radius: 14px;
       padding: 36px 28px;
-      font-family: 'DM Mono', monospace;
+      font-family: 'JetBrains Mono', monospace;
       font-size: 0.82rem;
       color: var(--muted);
       line-height: 2;
@@ -386,7 +374,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: 'Syne', sans-serif;
+      font-family: 'Outfit', sans-serif;
       font-size: 2rem;
       font-weight: 800;
       color: var(--accent);
@@ -394,14 +382,14 @@
     }
 
     .about-name {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Outfit', sans-serif;
       font-weight: 700;
       font-size: 1.1rem;
       margin-bottom: 4px;
     }
 
     .about-role {
-      font-family: 'DM Mono', monospace;
+      font-family: 'JetBrains Mono', monospace;
       font-size: 0.72rem;
       letter-spacing: 0.1em;
       text-transform: uppercase;
@@ -418,7 +406,7 @@
     }
 
     .skill-tag {
-      font-family: 'DM Mono', monospace;
+      font-family: 'JetBrains Mono', monospace;
       font-size: 0.68rem;
       letter-spacing: 0.06em;
       color: var(--accent);
@@ -428,7 +416,7 @@
     }
 
     .about-content h3 {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Outfit', sans-serif;
       font-weight: 700;
       font-size: 1.3rem;
       margin-bottom: 14px;
@@ -437,7 +425,7 @@
     .about-content p {
       color: var(--muted);
       margin-bottom: 16px;
-      font-size: 0.97rem;
+      font-size: 1rem;
     }
 
     .timeline {
@@ -465,11 +453,11 @@
 
     .tl-body {}
     .tl-title {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Outfit', sans-serif;
       font-weight: 600;
       font-size: 0.93rem;
     }
-    .tl-desc { font-size: 0.85rem; color: var(--muted); }
+    .tl-desc { font-size: 0.92rem; color: var(--muted); line-height: 1.65; }
 
     /* ── CTA PORTAL ── */
     #portal {
@@ -511,7 +499,7 @@
       background: linear-gradient(135deg, var(--accent2), #00bfff);
       color: #04070f;
       text-decoration: none;
-      font-family: 'Syne', sans-serif;
+      font-family: 'Outfit', sans-serif;
       font-weight: 800;
       font-size: 1.05rem;
       letter-spacing: -0.01em;
@@ -528,7 +516,7 @@
     }
 
     .portal-note {
-      font-family: 'DM Mono', monospace;
+      font-family: 'JetBrains Mono', monospace;
       font-size: 0.72rem;
       color: var(--muted);
       margin-top: 20px;
@@ -542,7 +530,7 @@
       text-align: center;
       padding: 40px 5%;
       border-top: 1px solid var(--border);
-      font-family: 'DM Mono', monospace;
+      font-family: 'JetBrains Mono', monospace;
       font-size: 0.75rem;
       color: var(--muted);
       letter-spacing: 0.06em;
